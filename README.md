@@ -10,6 +10,7 @@
 `KHEOPS_CLIENT_ZIPPERCLIENTID` default value : Zipper<br>
 `KHEOPS_WELCOMEBOT_WEBHOOK` this env var is obtional<br>
 `KHEOPS_USE_KHEOPS_SCOPE` default value : true<br>
+`KHEOPS_AUTHDB_PASS_FILE` default value : /run/secrets/kheops_authdb_pass<br>
 ## KheopsNginx
 
 `SECRET_FILE_PATH` default value : /run/secrets<br>
