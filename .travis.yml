@@ -10,19 +10,16 @@ install:
 # command to run tests
 script:
   - python3 script.py
-#  - ls
-#  - cat README.md
-#  - git status
-#  - git add README.md
-#  - git commit -m"[ci skip] update readme"
-#  - git push https://$githubusername:$githubtoken@github.com/OsiriX-Foundation/DockerEnvironmentVariable.git HEAD:master
+  - git add README.md
+  - git commit -m"[ci skip] update readme" --allow-empty
+  - git push https://$githubusername:$githubtoken@github.com/OsiriX-Foundation/DockerEnvironmentVariable.git HEAD:master
 
 
-deploy:
-  provider: pages
-  target_branch: master
-  skip_cleanup: true
-  github_token: $githubtoken  # Set in the settings page of your repository, as a secure variable
-  keep_history: true
-  on:
-    branch: master
+#deploy:
+#  provider: pages
+#  target_branch: master
+#  skip_cleanup: true
+#  github_token: $githubtoken  # Set in the settings page of your repository, as a secure variable
+#  keep_history: true
+#  on:
+#    branch: master
