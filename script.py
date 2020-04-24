@@ -18,11 +18,11 @@ with open(file, 'w') as filetowrite:
     for repo in dockerfile_url:
         response = requests.get(dockerfile_url[repo])
 
+        print(repo)
+        filetowrite.write("## "+repo+"\n\n")
+        
         for command in dockerfile.parse_string(response.content.decode("utf-8")):
             if command.cmd == 'env':
-
-                print(repo)
-                filetowrite.write("## "+repo+"\n\n")
                 for i in range(0, len(command.value), 2):
                     if not str(command.value[i+1]):
                         print("env_var : " + str(command.value[i]) + " no default value")
