@@ -1,7 +1,5 @@
 ## KheopsAuthorization
 
-`SECRET_FILE_PATH` default value : /run/secrets<br>
-`REPLACE_FILE_PATH` default value : /usr/local/tomcat/conf/context.xml<br>
 `KHEOPS_AUTHDB_USER` default value : kheopsuser<br>
 `KHEOPS_AUTHDB_URL` default value : postgresql://authdb:5432<br>
 `KHEOPS_AUTHDB_NAME` default value : kheops<br>
