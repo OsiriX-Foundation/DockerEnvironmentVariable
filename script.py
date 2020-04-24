@@ -20,13 +20,16 @@ with open(file, 'w') as filetowrite:
 
         print(repo)
         filetowrite.write("## "+repo+"\n\n")
-        
+
         for command in dockerfile.parse_string(response.content.decode("utf-8")):
             if command.cmd == 'env':
                 for i in range(0, len(command.value), 2):
                     if not str(command.value[i+1]):
-                        print(str(command.value[i]) + " no default value")
-                        filetowrite.write("`" + str(command.value[i]) + "` no default value"+"<br>\n")
+                        print(str(command.value[i]) + " this env var is mandatory")
+                        filetowrite.write("`" + str(command.value[i]) + "` this env var is mandatory"+"<br>\n")
+                    elif str(command.value[i+1]) == "\"\"":
+                        print(str(command.value[i]) + " this env var is obtional")
+                        filetowrite.write("`" + str(command.value[i]) + "` this env var is obtional"+"<br>\n")
                     else:
                         print(str(command.value[i]) + " value : " + str(command.value[i+1]))
                         filetowrite.write("`" + str(command.value[i]) + "` default value : " + str(command.value[i+1])+"<br>\n")
