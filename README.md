@@ -1,4 +1,4 @@
-## KheopsAuthorizatio
+## KheopsAuthorization
 
 `SECRET_FILE_PATH` default value : /run/secrets<br>
 `REPLACE_FILE_PATH` default value : /usr/local/tomcat/conf/context.xml<br>
@@ -11,7 +11,7 @@
 `KHEOPS_CLIENT_DICOMWEBPROXYCLIENTID` default value : DICOMWebProxy<br>
 `KHEOPS_CLIENT_ZIPPERCLIENTID` default value : Zipper<br>
 `KHEOPS_WELCOMEBOT_WEBHOOK` this env var is obtional<br>
-`KHEOPS_USE_KHEOPS_SCOPE` this env var is obtional<br>
+`KHEOPS_USE_KHEOPS_SCOPE` default value : true<br>
 ## KheopsNginx
 
 `SECRET_FILE_PATH` default value : /run/secrets<br>
