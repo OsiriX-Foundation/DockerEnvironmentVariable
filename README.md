@@ -11,6 +11,9 @@
 `KHEOPS_WELCOMEBOT_WEBHOOK` this env var is obtional<br>
 `KHEOPS_USE_KHEOPS_SCOPE` default value : true<br>
 `KHEOPS_AUTHDB_PASS_FILE` default value : /run/secrets/kheops_authdb_pass<br>
+`KHEOPS_AUTH_HMASECRET_FILE` default value : /run/secrets/kheops_auth_hmasecret<br>
+`KHEOPS_CLIENT_DICOMWEBPROXY_SECRET_FILE` default value : /run/secrets/kheops_client_dicomwebproxysecret<br>
+`KHEOPS_CLIENT_ZIPPER_SECRET_FILE` default value : /run/secrets/kheops_client_zippersecret<br>
 ## KheopsNginx
 
 `SECRET_FILE_PATH` default value : /run/secrets<br>
