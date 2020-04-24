@@ -3,7 +3,7 @@ import requests
 
 
 dockerfile_url = {}
-dockerfile_url["KheopsAuthorization"] = "https://raw.githubusercontent.com/OsiriX-Foundation/KheopsAuthorization/master/docker/Dockerfile"
+dockerfile_url["KheopsAuthorization"] = "https://raw.githubusercontent.com/OsiriX-Foundation/KheopsAuthorization/dev_env_var/docker/Dockerfile"
 dockerfile_url["KheopsNginx"] = "https://raw.githubusercontent.com/OsiriX-Foundation/KheopsNginx/master/Dockerfile"
 dockerfile_url["KheopsUI"] = "https://raw.githubusercontent.com/OsiriX-Foundation/KheopsUI/master/Dockerfile"
 dockerfile_url["KheopsDICOMwebProxy"] = "https://raw.githubusercontent.com/OsiriX-Foundation/KheopsDICOMwebProxy/master/docker/Dockerfile"
