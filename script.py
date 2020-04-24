@@ -25,8 +25,8 @@ with open(file, 'w') as filetowrite:
             if command.cmd == 'env':
                 for i in range(0, len(command.value), 2):
                     if not str(command.value[i+1]):
-                        print("env_var : " + str(command.value[i]) + " no default value")
-                        filetowrite.write("env_var : `" + str(command.value[i]) + "` no default value"+"<br>\n")
+                        print(str(command.value[i]) + " no default value")
+                        filetowrite.write("`" + str(command.value[i]) + "` no default value"+"<br>\n")
                     else:
-                        print("env_var : " + str(command.value[i]) + " value : " + str(command.value[i+1]))
-                        filetowrite.write("env_var : `" + str(command.value[i]) + "` default value : " + str(command.value[i+1])+"<br>\n")
+                        print(str(command.value[i]) + " value : " + str(command.value[i+1]))
+                        filetowrite.write("`" + str(command.value[i]) + "` default value : " + str(command.value[i+1])+"<br>\n")
