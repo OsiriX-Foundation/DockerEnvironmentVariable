@@ -8,7 +8,7 @@
 `KHEOPS_OIDC_PROVIDER` this env var is mandatory<br>
 `KHEOPS_CLIENT_DICOMWEBPROXYCLIENTID` default value : DICOMWebProxy<br>
 `KHEOPS_CLIENT_ZIPPERCLIENTID` default value : Zipper<br>
-`KHEOPS_WELCOMEBOT_WEBHOOK` this env var is obtional<br>
+`KHEOPS_WELCOMEBOT_WEBHOOK` this env var is optional<br>
 `KHEOPS_USE_KHEOPS_SCOPE` default value : true<br>
 `KHEOPS_AUTHDB_PASS_FILE` default value : /run/secrets/kheops_authdb_pass<br>
 `KHEOPS_AUTH_HMASECRET_FILE` default value : /run/secrets/kheops_auth_hmasecret<br>
