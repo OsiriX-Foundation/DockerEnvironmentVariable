@@ -28,8 +28,8 @@ with open(file, 'w') as filetowrite:
                         print(str(command.value[i]) + " this env var is mandatory")
                         filetowrite.write("`" + str(command.value[i]) + "` this env var is mandatory"+"<br>\n")
                     elif str(command.value[i+1]) == "\"\"":
-                        print(str(command.value[i]) + " this env var is obtional")
-                        filetowrite.write("`" + str(command.value[i]) + "` this env var is obtional"+"<br>\n")
+                        print(str(command.value[i]) + " this env var is optional")
+                        filetowrite.write("`" + str(command.value[i]) + "` this env var is optional"+"<br>\n")
                     else:
                         print(str(command.value[i]) + " value : " + str(command.value[i+1]))
                         filetowrite.write("`" + str(command.value[i]) + "` default value : " + str(command.value[i+1])+"<br>\n")
