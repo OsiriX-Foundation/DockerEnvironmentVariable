@@ -1,12 +1,12 @@
-### variables mandatory with default value
+### variables : mandatory with default value
 
 `ENV name=default_value`
 
-### Variable mandatory without default value
+### Variables : mandatory without default value
 
 `ENV name=`
 
-### Variable optional
+### Variables : optional
 
 `ENV name=""`
 
