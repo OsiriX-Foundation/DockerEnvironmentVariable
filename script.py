@@ -5,6 +5,11 @@ import requests
 dockerfile_url = {}
 dockerfile_url["KheopsAuthorization"] = "https://raw.githubusercontent.com/OsiriX-Foundation/KheopsAuthorization/master/docker/Dockerfile"
 dockerfile_url["KheopsNginx"] = "https://raw.githubusercontent.com/OsiriX-Foundation/KheopsNginx/master/Dockerfile"
+dockerfile_url["KheopsUI"] = "https://raw.githubusercontent.com/OsiriX-Foundation/KheopsUI/master/Dockerfile"
+dockerfile_url["KheopsDICOMwebProxy"] = "https://raw.githubusercontent.com/OsiriX-Foundation/KheopsDICOMwebProxy/master/docker/Dockerfile"
+dockerfile_url["KheopsZipper"] = "https://raw.githubusercontent.com/OsiriX-Foundation/KheopsZipper/master/docker/Dockerfile"
+dockerfile_url["PACS_PEP"] = "https://raw.githubusercontent.com/OsiriX-Foundation/PACSProxyAuthorization/master/hosts/proxy/Dockerfile"
+
 
 
 file='README.md'
