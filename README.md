@@ -23,8 +23,6 @@
 `SERVER_NAME` default value : localhost<br>
 ## KheopsDICOMwebProxy
 
-`SECRET_FILE_PATH` default value : /run/secrets<br>
-`REPLACE_FILE_PATH` default value : /usr/local/tomcat/conf/context.xml<br>
 ## KheopsZipper
 
 `SECRET_FILE_PATH` default value : /run/secrets<br>
