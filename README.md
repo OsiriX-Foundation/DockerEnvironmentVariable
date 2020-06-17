@@ -16,6 +16,7 @@
 `KHEOPS_CLIENT_ZIPPER_SECRET_FILE` default value : /run/secrets/kheops_client_zippersecret<br>
 ## KheopsNginx
 
+`LETS_ENCRYPT_EMAIL` default value : spalte@naturalimage.ch<br>
 `SECRET_FILE_PATH` default value : /run/secrets<br>
 ## KheopsUI
 
