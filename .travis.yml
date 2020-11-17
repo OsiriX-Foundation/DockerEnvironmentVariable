@@ -12,7 +12,7 @@ script:
   - python3 script.py
   - git add README.md
   - git commit -m"[ci skip] update readme" --allow-empty
-  - git push https://$githubusername:$githubtoken@github.com/OsiriX-Foundation/DockerEnvironmentVariable.git HEAD:master
+  - git push --force https://$githubusername:$githubtoken@github.com/OsiriX-Foundation/DockerEnvironmentVariable.git HEAD:master
 
 
 #deploy:
