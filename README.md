@@ -14,6 +14,9 @@
 `KHEOPS_AUTH_HMASECRET_FILE` default value : /run/secrets/kheops_auth_hmasecret<br>
 `KHEOPS_CLIENT_DICOMWEBPROXY_SECRET_FILE` default value : /run/secrets/kheops_client_dicomwebproxysecret<br>
 `KHEOPS_CLIENT_ZIPPER_SECRET_FILE` default value : /run/secrets/kheops_client_zippersecret<br>
+`KHEOPS_AUTHORIZATION_ENABLE_ELASTIC` default value : false<br>
+`KHEOPS_AUTHORIZATION_ELASTIC_INSTANCE` default value : only_if_KHEOPS_AUTHORIZATION_ENABLE_ELASTIC_is_true<br>
+`KHEOPS_AUTHORIZATION_LOGSTASH_URL` default value : only_if_KHEOPS_AUTHORIZATION_ENABLE_ELASTIC_is_true<br>
 ## KheopsNginx
 
 `LETS_ENCRYPT_EMAIL` default value : spalte@naturalimage.ch<br>
