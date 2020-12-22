@@ -28,4 +28,6 @@ jobs:
       - name: Execute script
         run: python3 script.py
       - name: test
-        run: cat README.md
+        run: | 
+          cat README.md
+          git diff
