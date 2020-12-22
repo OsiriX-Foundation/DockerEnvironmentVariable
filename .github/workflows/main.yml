@@ -37,5 +37,7 @@ jobs:
           git status
       - name: test2
         run: | 
+          git config --global user.email "you@example.com"
+          git config --global user.name "Your Name"
           git commit -m"update readme" --allow-empty
           git status
