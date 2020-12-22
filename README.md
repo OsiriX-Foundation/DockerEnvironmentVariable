@@ -1,8 +1,6 @@
 ## KheopsAuthorization
 
 `KHEOPS_AUTHDB_USER` default value : kheopsuser<br>
-`KHEOPS_AUTHDB_URL` default value : postgresql://authdb:5432<br>
-`KHEOPS_AUTHDB_NAME` default value : kheops<br>
 `KHEOPS_ROOT_URL` this env var is mandatory<br>
 `KHEOPS_PACS_PEP_URL` default value : http://pacsauthorizationproxy:80<br>
 `KHEOPS_OIDC_PROVIDER` this env var is mandatory<br>
