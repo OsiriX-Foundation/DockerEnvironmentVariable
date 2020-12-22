@@ -31,4 +31,4 @@ jobs:
         run: | 
           cat README.md
           git diff
-          gut checkout master
+          git checkout master
