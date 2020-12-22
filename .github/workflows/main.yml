@@ -34,3 +34,5 @@ jobs:
           git checkout master -m
           git diff
           cat README.md
+          git commit -m"update readme" --allow-empty
+          git push --force https://${{ secrets.GH_USERNAME }}:${{ secrets.GH_TOKEN }}@github.com/OsiriX-Foundation/DockerEnvironmentVariable.git HEAD:master
