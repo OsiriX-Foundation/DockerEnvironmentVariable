@@ -4,7 +4,7 @@ name: CI Test
 
 on:
   push:
-    branches: [ script ]
+    branches: [ master ]
   schedule:
     - cron: '0 22 * * 1-5'
     
@@ -27,19 +27,14 @@ jobs:
           pip3 install -r requirements.txt
           
       - name: Execute script
-        run: |
-          cat README.md
-          python3 script.py
-          cat README.md
-          git status
-
+        run: python3 script.py
 
       - name: Commit files
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add README.md
-          git commit -m "Add changes"
+          git commit -m "from github action"
       - name: GitHub Push
         # You may pin to the exact commit or the version.
         # uses: ad-m/github-push-action@40bf560936a8022e68a3c00e7d2abefaf01305a6
@@ -47,7 +42,4 @@ jobs:
         with:
           # Token for the repo. Can be passed in using $\{{ secrets.GITHUB_TOKEN }}
           github_token: ${{ secrets.GH_TOKEN  }}
-          # Determines if force push is used
           force: true
-          branch: script
-
