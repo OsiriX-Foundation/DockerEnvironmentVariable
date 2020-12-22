@@ -32,3 +32,5 @@ jobs:
           cat README.md
           git diff
           git checkout master -m
+          git diff
+          cat README.md
