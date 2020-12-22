@@ -27,7 +27,7 @@ jobs:
           
       - name: Execute script
         run: python3 script.py
-      - name: test
+      - name: test1
         run: | 
           cat README.md
           git diff
@@ -35,6 +35,8 @@ jobs:
           git diff
           cat README.md
           git status
+      - name: test2
+        run: | 
           git commit -m"update readme" --allow-empty
           git status
 #git push --force https://${{ secrets.GH_USERNAME }}:${{ secrets.GH_TOKEN }}@github.com/OsiriX-Foundation/DockerEnvironmentVariable.git HEAD:master
