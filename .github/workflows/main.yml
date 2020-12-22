@@ -38,4 +38,5 @@ jobs:
           github_token: ${{ secrets.GH_TOKEN  }}
           # Determines if force push is used
           force: true
+          branch: script
 
